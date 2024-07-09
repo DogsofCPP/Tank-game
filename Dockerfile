@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     qtcreator
 
 # 检查是否安装成功
-RUN qmake --version
+RUN qmake6 --version
 
 # 设置工作目录
 WORKDIR /TANKFIGHTER_EXAMPLE
