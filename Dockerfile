@@ -13,7 +13,6 @@ RUN apt-get update && apt-get install -y \
     qtcreator
 
 # 检查是否安装成功
-RUN $(qtchooser -print-env)
 RUN qmake --version
 
 # 设置工作目录
