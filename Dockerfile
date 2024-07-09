@@ -12,6 +12,10 @@ RUN apt-get update && apt-get install -y \
     qt6-l10n-tools \
     qtcreator
 
+# 检查是否安装成功
+RUN $(qtchooser -print-env)
+RUN qmake --version
+
 # 设置工作目录
 WORKDIR /TANKFIGHTER_EXAMPLE
 
